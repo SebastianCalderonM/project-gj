@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: -4433242025429702766}
   m_Layer: 0
   m_Name: proyectil_jugador
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 181408ed7642ce64aaaca0aaabe5c078, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  proyectil_speed: 0.5
+  proyectil_speed: 10
   impact_effect: {fileID: 6884898479322802259, guid: 537313217cda1db469c2d8bf38566453, type: 3}
   attack_direction: {x: 0, y: 0}
 --- !u!58 &-4433242025429702766
@@ -133,7 +133,7 @@ CircleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

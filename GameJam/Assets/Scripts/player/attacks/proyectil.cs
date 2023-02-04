@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class proyectil : MonoBehaviour
 {
-    public float proyectil_speed = 1000.0f;
+    public float proyectil_speed ;
     public GameObject impact_effect;
     public Vector2 attack_direction;
     private Rigidbody2D rigidbody;
@@ -19,9 +19,13 @@ public class proyectil : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {   
-        Debug.Log("choco");
-        GameObject gm = Instantiate(impact_effect, transform.position, Quaternion.identity);
-        Destroy(gameObject);
+        Debug.Log("choco con algo");
+
+        if (!collision.gameObject.CompareTag("Player"))
+        {
+            GameObject gm = Instantiate(impact_effect, transform.position, Quaternion.identity);
+            Destroy(gameObject);
+        }
     }
     
 }
