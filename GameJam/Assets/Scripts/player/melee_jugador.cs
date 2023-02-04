@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class melee_jugador : MonoBehaviour
 {
+    public int attackDamage = 100;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +17,7 @@ public class melee_jugador : MonoBehaviour
         
     }
 
-        private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {   
         Debug.Log("colision con algo");
         if (collision.gameObject.tag!="Player")
@@ -24,8 +25,13 @@ public class melee_jugador : MonoBehaviour
         {
             if (collision.gameObject.tag !="Map")
             {
-            Debug.Log("melee con algo not plater y not map");
-            //hacer dano
+                Debug.Log("melee con algo not player y not map");
+                //hacer dano
+                Enemy enemy = collision.GetComponent<Enemy>();
+                if (enemy != null)
+                {
+                    enemy.TakeDamage(attackDamage);
+                }
             }
         }
     }

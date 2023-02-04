@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 4005157059479415848}
   - component: {fileID: 6193449897030578109}
   - component: {fileID: 3611809946718868711}
-  - component: {fileID: 5518299212621068659}
   - component: {fileID: -4433242025429702766}
+  - component: {fileID: -7342590677663465399}
   m_Layer: 0
-  m_Name: proyectil_jugador
-  m_TagString: Player
+  m_Name: proyectil_enemigo
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 1805719429073065493}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1d520b7970578ad45b5c5b3b7ff5bd2a, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.43867922, b: 0.7224185, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -108,23 +108,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &5518299212621068659
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1805719429073065493}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 181408ed7642ce64aaaca0aaabe5c078, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  proyectil_speed: 10
-  impact_effect: {fileID: 6884898479322802259, guid: 537313217cda1db469c2d8bf38566453, type: 3}
-  attack_direction: {x: 0, y: 0}
-  damage: 34
-  timeLiveBullet: 5
 --- !u!58 &-4433242025429702766
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -141,3 +124,21 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 1.28
+--- !u!114 &-7342590677663465399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1805719429073065493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91fb2462b867fde40a8026c87e4e194b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  proyectil_speed: 5
+  impact_effect: {fileID: 6884898479322802259, guid: 537313217cda1db469c2d8bf38566453, type: 3}
+  attack_direction: {x: 0, y: 0}
+  damage: 34
+  player_target: {fileID: 0}
+  timeLiveBullet: 5

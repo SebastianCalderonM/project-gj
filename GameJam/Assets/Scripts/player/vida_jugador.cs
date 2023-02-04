@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class vida_jugador : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public int health = 100;
+    public void TakeDamage(int damage)
     {
-        
+        health -= damage;
+        if (health <= 0)
+        {
+            Die();
+        }
     }
-
-    // Update is called once per frame
-    void Update()
+    void Die()
     {
-        
+        // Lógica para matar al jugador
+        Debug.Log("Player died");
+        //Destroy(gameObject);
     }
 }
