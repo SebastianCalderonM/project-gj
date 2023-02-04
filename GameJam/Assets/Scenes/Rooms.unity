@@ -308,6 +308,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: protagonista
       objectReference: {fileID: 0}
+    - target: {fileID: 5443330232669578130, guid: b9b4b933feb019240b48ede32c754941, type: 3}
+      propertyPath: golpe
+      value: 
+      objectReference: {fileID: 1641892222617639022, guid: c63235780ec4ab949b92571fb1210c2c, type: 3}
+    - target: {fileID: 5443330232669578130, guid: b9b4b933feb019240b48ede32c754941, type: 3}
+      propertyPath: golpePosition
+      value: 
+      objectReference: {fileID: 1938671517}
     - target: {fileID: 7879198840504022090, guid: b9b4b933feb019240b48ede32c754941, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -462,7 +470,7 @@ GameObject:
   - component: {fileID: 1606649275}
   m_Layer: 0
   m_Name: playertest
-  m_TagString: Player
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -560,6 +568,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1938671517 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 264122773354630895, guid: b9b4b933feb019240b48ede32c754941, type: 3}
+  m_PrefabInstance: {fileID: 1084568904}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1958915699 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9093831739219667091, guid: 5252942b9f5e2a340b41e3112b29ce3b, type: 3}

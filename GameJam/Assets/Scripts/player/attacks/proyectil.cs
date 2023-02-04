@@ -17,6 +17,7 @@ public class proyectil : MonoBehaviour
         rigidbody = GetComponent<Rigidbody2D>();
         rigidbody.velocity = attackDirection * proyectil_speed;
     }
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {   
         Debug.Log("choco con algo");
