@@ -6,7 +6,11 @@ TagManager:
   tags:
   - SpawnPoint
   - Rooms
+<<<<<<< Updated upstream
   - ataques_jugador
+=======
+  - Map
+>>>>>>> Stashed changes
   layers:
   - Default
   - TransparentFX
