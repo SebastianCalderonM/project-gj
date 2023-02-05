@@ -21,7 +21,7 @@ public class ataques_jugador : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0)) // ataque melee
         {
-            Instantiate(golpe, golpePosition.position, golpePosition.rotation);
+            Instantiate(golpe, golpePosition.position, golpePosition.rotation, transform);
         }
     }
 }
