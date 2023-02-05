@@ -202,6 +202,18 @@ MonoBehaviour:
   gates:
   - {fileID: 6858747069212410643}
   - {fileID: 805463036414588333}
+  enemy:
+  - {fileID: 6003239097571627959, guid: a0ebc50e612e68a449bd57ab5e8d0772, type: 3}
+  - {fileID: 6003239097571627959, guid: a0ebc50e612e68a449bd57ab5e8d0772, type: 3}
+  enemyNumber: 0
+  spawnPoints:
+  - {x: 0, y: 0, z: 0}
+  - {x: 2, y: 2, z: 0}
+  - {x: 2, y: -2, z: 0}
+  - {x: -2, y: -2, z: 0}
+  - {x: -2, y: 2, z: 0}
+  - {x: 4, y: 0, z: 0}
+  - {x: -4, y: 0, z: 0}
 --- !u!1 &5056423168932164146
 GameObject:
   m_ObjectHideFlags: 0
