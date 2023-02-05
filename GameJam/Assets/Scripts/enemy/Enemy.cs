@@ -64,8 +64,5 @@ public class Enemy : MonoBehaviour
         // Lógica para matar al enemigo
         Debug.Log("Enemy died");
         Destroy(gameObject);
-
-        // load victory scene
-        SceneManager.LoadScene("victoria");
     }
 }
