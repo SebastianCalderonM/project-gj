@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Enemy : MonoBehaviour
 {
@@ -63,5 +64,8 @@ public class Enemy : MonoBehaviour
         // Lógica para matar al enemigo
         Debug.Log("Enemy died");
         Destroy(gameObject);
+
+        // load victory scene
+        SceneManager.LoadScene("victoria");
     }
 }

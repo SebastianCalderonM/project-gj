@@ -25,8 +25,8 @@ public class proyectil_enemigo : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {   
-        Enemy enemy = collision.GetComponent<Enemy>();
-        if (enemy == null){
+        if (!collision.gameObject.CompareTag("Enemy"))
+        {
             //Debug.Log("choco");
             vida_jugador player = collision.GetComponent<vida_jugador>();
             if (player != null)
