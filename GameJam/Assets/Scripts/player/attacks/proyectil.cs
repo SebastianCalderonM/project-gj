@@ -23,7 +23,7 @@ public class proyectil : MonoBehaviour
     
     private void OnTriggerEnter2D(Collider2D collision)
     {   
-        Debug.Log("choco con algo");
+        //Debug.Log("choco con algo");
 
         if (!collision.gameObject.CompareTag("Player"))
         {

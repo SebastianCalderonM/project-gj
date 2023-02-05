@@ -19,13 +19,13 @@ public class melee_jugador : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {   
-        Debug.Log("colision con algo");
+        //Debug.Log("colision con algo");
         if (collision.gameObject.tag!="Player")
-        Debug.Log("colision con not player");
+        //Debug.Log("colision con not player");
         {
             if (collision.gameObject.tag !="Map")
             {
-                Debug.Log("melee con algo not player y not map");
+                //Debug.Log("melee con algo not player y not map");
                 //hacer dano
                 Enemy enemy = collision.GetComponent<Enemy>();
                 if (enemy != null)

@@ -5,12 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - SpawnPoint
-  - Rooms
-<<<<<<< Updated upstream
-  - ataques_jugador
-=======
   - Map
->>>>>>> Stashed changes
+  - ataques_jugador
+  - PlayerProyectile
+  - Rooms
+  - Enemy
   layers:
   - Default
   - TransparentFX
